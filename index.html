@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#12060a"><meta name="description" content="A serene Ganpati Aarti prayer player.">
+<title>Ganpati Aarti • Divine Prayer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span></div>
+<div class="stars" aria-hidden="true"></div>
+<div class="petals" aria-hidden="true"><span>✦</span><span>✧</span><span>•</span><span>✦</span><span>✧</span><span>•</span><span>✦</span><span>✧</span></div>
+<main class="app">
+<header class="hero">
+  <div class="om">ॐ</div>
+  <p class="eyebrow">॥ श्री गणेशाय नमः ॥</p>
+  <h1>Ganpati Aarti</h1>
+  <p class="subtitle">A peaceful space for prayer & devotion</p>
+</header>
+<section class="temple-card" aria-label="Aarti player">
+  <div class="top-arch"></div>
+  <div class="deity">
+    <div class="halo"></div><div class="halo-ring ring1"></div><div class="halo-ring ring2"></div>
+    <div class="ganesha">ॐ</div>
+    <div class="diya d1"><span>🪔</span></div><div class="diya d2"><span>🪔</span></div>
+    <div class="smoke s1"></div><div class="smoke s2"></div>
+  </div>
+  <div class="now"><span id="status">Ready for prayer</span><h2 id="title">Ganpati Aarti 1</h2><p id="counter">1 / 4</p></div>
+  <div class="progress"><span id="progressFill"></span></div>
+  <div class="time"><span id="current">0:00</span><span id="duration">0:00</span></div>
+  <div class="controls">
+    <button id="prev" aria-label="Previous prayer">⏮</button>
+    <button id="backward" class="skip" aria-label="Skip backward 10 seconds">↶ 10s</button>
+    <button id="play" class="play" aria-label="Play"><span>▶</span></button>
+    <button id="forward" class="skip" aria-label="Skip forward 10 seconds">10s ↷</button>
+    <button id="next" aria-label="Next prayer">⏭</button>
+  </div>
+  <div class="playlist" id="playlist"></div>
+  <p class="hint">Prayers continue automatically • Skip backward/forward by 10 seconds</p>
+  <audio id="audio" preload="metadata"></audio>
+</section>
+<footer>॥ गणपति बप्पा मोरया ॥</footer>
+</main>
+<script src="script.js"></script>
+</body></html>
